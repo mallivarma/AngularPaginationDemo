@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+    <div *ngIf=" products?.length > 0">
+        
+            <p>Below  are the products. It is the most popular in the  world, with a metropolitan area of over 13 million inhabitants.</p>
+        
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Price</th>
+  </tr>
+  <tr *ngFor = "let product of products">
+    <td>{{product.id}}</td>
+    <td>{{product.name}}</td>7
+    <td>{{product.price}}</td>
+  </tr>
+</table>
+</div>
+
+<div *ngIf=" !products?.length"> 
+
+    No products availble at this time,Please try again...
+</div>
+
+</body>
+</html>
+
